@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>copia-copia-copia-copia</title>
+    <meta name="description" content="">
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+
+<body>
+
+   <a-scene>
+
+ 
+        <a-assets>
+            <img   id="sky" src="assets\sky.jpg">
+             <video id="shoot" src="assets\Horses.mp4" autoplay loop="true"></video>
+            <a-asset-item id="grass" src="assets\grass.gltf"></a-asset-item>
+        </a-assets>
+    
+        
+    
+    
+    <a-video src="#shoot" width="10" height="10" color="" position="-13 12 -64"shadow></a-video>
+    <a-video src="#sky" width="12" height="12" color="" position="-13 10 -64"shadow></a-video>
+    
+  
+   
+
+          <a-entity static-body gltf-model="#grass" scale ="5 7 5"position="-35 -15 -38"
+          animation="property: rotation; to: 0 360 0; loop: true; dur: 100000"></a-entity>
+
+
+</a-scene>
+</body>
+
+</html>
